@@ -1,10 +1,10 @@
 export const homeObjOne = {
   id: "about",
-  lightBg: true,
+  lightBg: false,
   lightText: false,
   lightTextDesc: true,
   topLine: "About",
-  headline: "More than just work...",
+  headline: "More than just work..",
   description:
     "Besides being a Security+ certified Lead Insider Threat Analyst, my hobbies outside of work include: Running (Chicago and Boston Marathon Finisher), Formula 1, Photography, Motorcycles, Cars, and Computers.",
   buttonLabel: "Photography Drive",
