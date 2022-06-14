@@ -1,6 +1,6 @@
 export const homeObjOne = {
   id: "about",
-  lightBg: false,
+  lightBg: true,
   lightText: false,
   lightTextDesc: true,
   topLine: "About",
