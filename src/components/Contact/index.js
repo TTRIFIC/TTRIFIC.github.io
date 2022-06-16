@@ -15,8 +15,8 @@ import {
 const Contact = () => {
   return (
     <Container>
+      <Icon to="/">Matthew Beckerman</Icon>
       <FormWrap>
-        <Icon to="/">Matthew Beckerman</Icon>
         <FormContent>
           <Form action="#">
             <FormH1>Contact</FormH1>
