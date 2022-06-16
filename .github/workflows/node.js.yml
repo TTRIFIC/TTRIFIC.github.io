@@ -31,13 +31,15 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Add CNAME
+    - name: Add git config info
       run: |
         git config user.name github-actions-bot
         git config user.email support+actions@github.com  
       
     - name: Deploy
-      run: npm run deploy
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
