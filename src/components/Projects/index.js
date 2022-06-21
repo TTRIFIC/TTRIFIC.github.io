@@ -8,7 +8,7 @@ import {
   ProjectsIcon,
   ProjectsP,
 } from "./ProjectsElements";
-import Icon1 from "../../images/react-logo.png";
+import Icon1 from "../../assets/images/react-logo.png";
 
 const Projects = () => {
   return (
