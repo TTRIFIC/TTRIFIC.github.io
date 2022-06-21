@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdKeyboardBackspace } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const Container = styled.div`
@@ -12,8 +13,8 @@ export const Container = styled.div`
   overflow: hidden;
   background: linear-gradient(
     108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
+    rgba(125, 125, 125, 1) 50%,
+    rgba(105, 105, 105, 1) 50%
   );
 `;
 
@@ -38,8 +39,23 @@ export const Icon = styled(Link)`
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;
-    margin-top: 8px;
-    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: -8px;
+    justify-content: left;
+  }
+`;
+
+export const ArrowBack = styled(MdKeyboardBackspace)`
+  margin-left: 8px;
+  font-size: 100px;
+  color: #fff;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #010606;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
   }
 `;
 
@@ -62,7 +78,7 @@ export const Form = styled.form`
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 80px 32px;
+  padding: 32px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -86,6 +102,13 @@ export const FormLabel = styled.label`
 `;
 
 export const FormInput = styled.input`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`;
+
+export const FormTextArea = styled.textarea`
   padding: 16px 16px;
   margin-bottom: 32px;
   border: none;
