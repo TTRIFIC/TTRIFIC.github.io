@@ -1,5 +1,11 @@
 import React from "react";
-import { FaInstagram, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaYoutube,
+  FaLinkedin,
+  FaGithub,
+  FaTiktok,
+} from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
@@ -51,6 +57,13 @@ const Footer = () => {
                 aria-label="Github"
               >
                 <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.tiktok.com/@becksmedia"
+                target="_blank"
+                aria-label="Tiktok"
+              >
+                <FaTiktok />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
