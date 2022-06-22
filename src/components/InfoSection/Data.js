@@ -24,7 +24,7 @@ export const homeObjTwo = {
   topLine: "Experience",
   description: "Deloitte: Lead Insider Threat Analyst",
   buttonLabel: "LinkedIn",
-  imgStart: true,
+  imgStart: false,
   dark: true,
   primary: true,
   darkText: false,
