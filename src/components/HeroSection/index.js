@@ -23,7 +23,14 @@ const HeroSection = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
+        <VideoBg
+          autoPlay
+          playsInline
+          loop
+          muted
+          src={Video}
+          type="video/mp4"
+        ></VideoBg>
       </HeroBg>
       <HeroContent>
         <HeroH1>Matthew Beckerman</HeroH1>
