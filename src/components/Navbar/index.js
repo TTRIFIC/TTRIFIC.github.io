@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 270) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
+            <NavLogo to="/" onClick={toggleHome} scrollNav={scrollNav}>
               <h1>Matthew Beckerman</h1>
             </NavLogo>
             <MobileIcon onClick={toggle}>
