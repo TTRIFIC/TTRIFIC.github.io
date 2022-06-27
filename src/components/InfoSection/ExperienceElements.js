@@ -4,7 +4,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 480px) {
     padding: 100px 0;
   }
 `;
@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 1200px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 850px) {
-    height: 1100px;
+    height: 2200px;
   }
 `;
 
@@ -30,11 +30,13 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+    imgStart ? `'col2 col1 col3'` : `'col1 col2 col3'`};
 
   @media screen and (max-width: 850px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+      imgStart
+        ? `'col1' 'col2' 'col3'`
+        : `'col1 col1' 'col2 col2' 'col3 col3'`};
   }
 `;
 
@@ -48,6 +50,12 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+`;
+
+export const Column3 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col3;
 `;
 
 export const TextWrapper = styled.div`
@@ -64,61 +72,44 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  margin-top: -16px;
 `;
 
 export const Heading = styled.h1`
   margin-bottom: 16px;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
 
-export const PositionTitle = styled.p`
+export const Employer = styled.p`
   max-width: 440px;
-  margin-bottom: 16px;
+  margin-bottom: -8px;
   font-size: 32px;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 36px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
-export const Subtitle = styled.p`
+export const Position = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+`;
+
+export const Description = styled.p`
+  max-width: 440px;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
-`;
-
-export const PositionBullets = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
-`;
-
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const ImgWrap = styled.div`
-  max-width: 555px;
-  height: 100%;
-`;
-
-export const Img = styled.img`
-  width: 100%;
-  margin: 0 0 10px 0;
-  padding-right: 0;
-
-  @media screen and (max-width: 850px) {
-    margin-top: -50px;
-  }
 `;

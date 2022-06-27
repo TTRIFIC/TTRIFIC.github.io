@@ -3,11 +3,8 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import {
-  homeObjOne,
-  homeObjTwo,
-  homeObjThree,
-} from "../components/InfoSection/Data";
+import { homeObjOne, homeObjThree } from "../components/InfoSection/Data";
+import Experience from "../components/InfoSection/Experience";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
@@ -24,7 +21,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
+      <Experience />
       <InfoSection {...homeObjThree} />
       <Projects />
       <Footer />

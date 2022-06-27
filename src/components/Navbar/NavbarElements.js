@@ -40,6 +40,10 @@ export const NavLogo = styled(LinkR)`
   margin-left: 10px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 850px) {
+    color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  }
 `;
 
 export const MobileIcon = styled.div`
