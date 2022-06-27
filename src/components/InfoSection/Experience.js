@@ -76,7 +76,7 @@ const Experience = ({ lightBg, lightText, darkText }) => {
                   corporate world. I worked here from June of 2018 to August of
                   2018. PayLink is a private financing firm that works with car
                   dealerships to provide the software needed to bill clients for
-                  their cars warranty. No, they are not the ones who call you 3
+                  their car's warranty. No, they are not the ones who call you 3
                   times a day asking about your car's extended warranty, they
                   just produce the billing software. My job-function at PayLink
                   was split between the customer service department, and the IT
