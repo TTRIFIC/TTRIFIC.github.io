@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     height: 2200px;
   }
 `;
@@ -32,7 +32,7 @@ export const InfoRow = styled.div`
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1 col3'` : `'col1 col2 col3'`};
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart
         ? `'col1' 'col2' 'col3'`
