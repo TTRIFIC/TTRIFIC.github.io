@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: "#f9f9f9";
 
   @media screen and (max-width: 480px) {
     padding: 100px 0;
@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 1200px;
+  height: 1400px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 850px) {
-    height: 2050px;
+    height: 2000px;
   }
 `;
 
@@ -80,30 +80,30 @@ export const Heading = styled.h1`
   font-size: 32px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #f7f8fa;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
 
-export const Employer = styled.p`
+export const Establishment = styled.p`
   max-width: 440px;
   margin-bottom: -8px;
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
 
-export const Position = styled.p`
+export const Date = styled.p`
   max-width: 440px;
   margin-bottom: 16px;
   margin-top: 16px;
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
 
 export const Description = styled.p`
@@ -111,5 +111,5 @@ export const Description = styled.p`
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
