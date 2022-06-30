@@ -14,15 +14,3 @@ export const homeObjOne = {
   primary: true,
   darkText: true,
 };
-
-export const homeObjThree = {
-  id: "education",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: true,
-  topLine: "Education",
-  description: "University of Illinois at Urbana-Champaign",
-  dark: true,
-  primary: true,
-  darkText: true,
-};
