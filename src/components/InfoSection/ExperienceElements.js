@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: #010606;
 
   @media screen and (max-width: 480px) {
     padding: 100px 0;
@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 850px) {
-    height: 2050px;
+    height: 2100px;
   }
 `;
 
@@ -29,14 +29,10 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1 col3'` : `'col1 col2 col3'`};
+  grid-template-areas: "col1 col2 col3";
 
   @media screen and (max-width: 850px) {
-    grid-template-areas: ${({ imgStart }) =>
-      imgStart
-        ? `'col1' 'col2' 'col3'`
-        : `'col1 col1' 'col2 col2' 'col3 col3'`};
+    grid-template-areas: "col1" "col2" "col3";
   }
 `;
 
@@ -80,9 +76,9 @@ export const Heading = styled.h1`
   font-size: 32px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #f7f8fa;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 850px) {
     font-size: 32px;
   }
 `;
@@ -93,7 +89,7 @@ export const Employer = styled.p`
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #fff;
 `;
 
 export const Position = styled.p`
@@ -103,7 +99,7 @@ export const Position = styled.p`
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #fff;
 `;
 
 export const Description = styled.p`
@@ -111,5 +107,5 @@ export const Description = styled.p`
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #fff;
 `;

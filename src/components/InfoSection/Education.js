@@ -78,12 +78,11 @@ const Education = () => {
                   enjoyable, I ran on the cross country and track team all 4
                   years, made the honor roll every semester, joined the National
                   Honor Society, joined Mu Alpha Theta (the math honor society),
-                  completed AP Psychology and AP Calculus BC, tutored younger
-                  students in math, and made some of my closest friends that I
-                  am still in touch with today. During my time here, I also took
-                  an intro level computer programming class which introduced me
-                  to coding in Java. I graduated in May of 2016 on the blue
-                  honor roll.
+                  completed AP Psychology and AP Calculus BC, and tutored
+                  younger students in math. During my time here, I also took an
+                  intro level computer programming class which introduced me to
+                  coding in Java. I graduated in May of 2016 on the blue honor
+                  roll.
                 </Description>
               </TextWrapper>
             </Column3>
