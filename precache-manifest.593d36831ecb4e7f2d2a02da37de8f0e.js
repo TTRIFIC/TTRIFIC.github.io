@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d8d45ca410444cc7ccd6",
+    "revision": "12c37454fd9c93901230",
     "url": "/static/css/main.499f4bd6.chunk.css"
   },
   {
-    "revision": "d8d45ca410444cc7ccd6",
-    "url": "/static/js/main.fb55562e.chunk.js"
+    "revision": "12c37454fd9c93901230",
+    "url": "/static/js/main.873b85eb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,11 +24,15 @@ self.__precacheManifest = [
     "url": "/static/media/video.ed44dc5d.mp4"
   },
   {
+    "revision": "9d8b393c0d6b33692d3e5d6663353817",
+    "url": "/static/media/homepage.9d8b393c.png"
+  },
+  {
     "revision": "e19ecc6561d2c680b7642b00d2a7b6e4",
     "url": "/static/media/boston_marathon_1.e19ecc65.jpeg"
   },
   {
-    "revision": "dcc977b3c8e39dd83b92f3209ecdd96f",
+    "revision": "df7f6d2cb7629e96ff2ee561a30ac8bd",
     "url": "/index.html"
   }
 ];
