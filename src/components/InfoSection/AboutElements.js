@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: #f9f9f9;
 
   @media screen and (max-width: 850px) {
     padding: 100px 0;
@@ -71,7 +71,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: #f7f8fa;
 
   @media screen and (max-width: 850px) {
     font-size: 32px;
@@ -84,10 +84,18 @@ export const PositionTitle = styled.p`
   font-size: 32px;
   font-weight: 600;
   line-height: 38px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: #010606;
 `;
 
 export const Subtitle = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #010606;
+`;
+
+export const PositionBullets = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
