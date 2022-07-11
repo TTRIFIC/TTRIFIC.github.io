@@ -28,7 +28,7 @@ const Education = () => {
                 <Date>May 2020</Date>
                 <Description>
                   College. When applying for admission at UIUC, I initally
-                  applied for Computer Science. To my surpirse (not) I did not
+                  applied for Computer Science. To my surprise (not) I did not
                   get in, however I was admitted for "Undecided". My freshman
                   year was spent packing my course-load in an attempt to
                   transfer into the College of Engineering as a CS major. After
