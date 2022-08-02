@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/files/MatthewBeckermanResumeSP2022.pdf";
+import resume from "../../assets/files/MatthewBeckermanResumeSU2022.pdf";
 import {
   SidebarContainer,
   Icon,
